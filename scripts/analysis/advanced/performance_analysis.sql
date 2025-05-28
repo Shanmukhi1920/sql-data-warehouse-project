@@ -1,6 +1,6 @@
 /*
 ===============================================================================
-Performance Analysis (Year-over-Year, Month-over-Month)
+Performance Analysis (Year-over-Year)
 ===============================================================================
 Purpose:
     - To measure the performance of products, customers, or regions over time.

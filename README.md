@@ -1,4 +1,4 @@
-# Data Warehouse Project
+# Data Warehouse & Analytics Project
 
 This project consolidates sales data from two source systems (ERP and CRM) into a unified data warehouse optimized for analytics and reporting.
 
@@ -11,13 +11,27 @@ The data architecture for this project follows Medallion Architecture **Bronze**
 2. **Silver Layer**: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
 3. **Gold Layer**: Houses business-ready data modeled into a star schema required for reporting and analytics.
 
-## Specifications
-- **Data Sources**: Import data from two source systems (ERP and CRM) provided as CSV files.
-- **Data Quality**: Cleanse and resolve data quality issues prior to analysis.
-- **Integration**: Combine both sources into a single, user-friendly data model designed for analytical queries.
-- **Scope**: Focus on the latest dataset only; historization of data is not required.
-- **Documentation**: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
+## 📊 Analytics Framework
+Comprehensive analytical approach covering:
 
+### Exploratory Data Analysis
+- **Database Exploration**: Schema and structure analysis
+- **Dimensions Analysis**: Customer geography, product hierarchy
+- **Date Analysis**: Temporal coverage and customer demographics
+- **Measures Analysis**: Key business metrics and KPIs
+- **Magnitude Analysis**: Distribution across dimensions
+- **Ranking Analysis**: Top and bottom performers
+
+### Advanced Analytics
+- **Change Over Time**: Monthly trends and seasonality
+- **Cumulative Analysis**: Running totals and progressive growth
+- **Performance Analysis**: Product performance vs. benchmarks
+- **Part-to-Whole**: Category contribution analysis
+- **Data Segmentation**: Customer and product segmentation
+
+### Business Reports
+- **Customer Report**: Comprehensive customer analytics with segmentation
+- **Product Report**: Product performance and lifecycle analysis
 
 ## 📂 Repository Structure
 ```
@@ -36,6 +50,10 @@ data-warehouse-project/
 │   ├── bronze/                         # Scripts for extracting and loading raw data
 │   ├── silver/                         # Scripts for cleaning and transforming data
 │   ├── gold/                           # Scripts for creating analytical models
+    ├──  analytics/                     # Analytical queries
+      ├── exploratory/                  # EDA queries
+      ├── advanced/                     # Advanced analytics
+      └── reports/                      # Business reporting
 │
 ├── tests/                              # Test scripts and quality files
 │
